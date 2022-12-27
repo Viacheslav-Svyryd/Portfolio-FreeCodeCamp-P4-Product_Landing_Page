@@ -1,0 +1,214 @@
+* {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+span {
+  color: red;
+}
+
+span2 {
+  color: blue;
+}
+
+span3 {
+  color: white;
+}
+
+span4 {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+ h2 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 20px;
+}
+
+#header-img {
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+#header {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  margin: -10px;
+}
+
+#nav-bar a {
+  float: left;
+  color: red;
+  font-size: 22px;
+  padding: 2vh 4vw;
+  text-decoration: none;
+}
+  
+#first-page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2vw 1fr 1fr 2vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#first-page img{
+  width: 50px;
+  height: 50px;
+  grid-column: 1/-1;
+  margin: auto;
+}
+
+.introduction {
+  margin: 50px 50px 0 40px;
+  grid-column: 2 / 3;
+  text-align: left;
+  background-color: lightgrey;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+video {
+  width: 700px;
+  grid-column: 3/ 4;
+  margin-top: 50px;
+}
+
+#about-me {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-me-img {
+  width: 550px;
+  height: 550px;
+  grid-column: 1;
+  margin-top: -550px;
+  margin-left: 40px;
+}
+
+.about-me-text {
+  grid-column: 2;
+  margin-top: 200px;
+  margin-right: 100px;
+  background-color: lightgrey;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+#contact-form-section {
+  padding-top: 40px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-items: center;
+  border: 4px solid red;
+  background-color: grey;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 100px 250px 50px 250px;
+  overflow: hidden;
+  color: white;
+}
+
+#form-name, #email, #phone-number {
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: black;
+  width:80%;
+}
+
+#form-name {
+  margin-bottom: -20px;
+}
+
+input {
+  margin-top: 20px;
+}
+
+input::placeholder {
+    font-weight: bold;
+    opacity: .5;
+    color: black;
+}
+
+#submit {
+  display: block;
+  border-radius: 40px;
+  background-color: red;
+  color:white;
+  padding: 20px 70px;
+  margin: 40px auto 0 auto;
+  font-size: 28px;
+  text-align: center;
+}
+
+#submit:hover {
+  color: black;
+}
+
+footer {
+  background-color: lightgrey;
+  width: 100%;
+  margin: 100px  0 -50px -10px;
+  padding: 0 50px 0 0;
+  overflow: hidden;
+}
+
+.footer-text {
+  margin-left: 40px;
+  font-size: 14px;
+  color: grey;
+}
+
+#nav-bar a:hover {
+  background-color: grey;
+}
+
+@media screen and (max-width: 580px) {
+  
+  #header {
+    flex-direction: column;
+  }
+  
+  #nav-bar a {
+    width:100%;
+  }
+} 
+
+@media screen and (max-width: 1020px) {
+    .contact-form {
+    margin-top: 400px;
+    text-align: left;
+  }
+}
